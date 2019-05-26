@@ -19,25 +19,71 @@ const EXCHANGE_ADDRESS = 'exchangeAddress'
 const UPDATE = 'UPDATE'
 
 const INITIAL_TOKENS_CONTEXT = {
-  1: {
+  3: {
     ETH: {
       [NAME]: 'Ethereum',
       [SYMBOL]: 'ETH',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: null
     },
+    '0xaD6D458402F60fD3Bd25163575031ACDce07538D': {
+      [NAME]: 'Dai Stablecoin v1.0',
+      [SYMBOL]: 'DAI',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x96820573a1d8a7fD1B3725DdbBc8A04E6f1A75C3'
+    },
+
+    '0xB47f1A9B121BA114d5e98722a8948e274d0F4042': {
+      [NAME]: 'Salt',
+      [SYMBOL]: 'SALT',
+      [DECIMALS]: 8,
+      [EXCHANGE_ADDRESS]: '0x6Bac72Ccfb71D4926593EA1a958FE153748bF7EC'
+    },
+    '0xaD78AFbbE48bA7B670fbC54c65708cbc17450167': {
+      [NAME]: 'Zilliqa',
+      [SYMBOL]: 'ZIL',
+      [DECIMALS]: 12,
+      [EXCHANGE_ADDRESS]: '0x9BAE4472C12afB638F607F2C51cB632e4d399C1D'
+    },
+
+    '0x4E470dc7321E84CA96FcAEDD0C8aBCebbAEB68C6': {
+      [NAME]: 'Kyber Network Crystal',
+      [SYMBOL]: 'KNC',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x7f08E325bA135D59801e5F62a79E8704cfc7D22d'
+    },
+    '0xDb0040451F373949A4Be60dcd7b6B8D6E42658B6': {
+      [NAME]: 'Basic Attention Token',
+      [SYMBOL]: 'BAT',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x148278cEa717e9612CC09A4dB2eB7d952002EbB3'
+    },
+    '0xb4f7332ed719Eb4839f091EDDB2A3bA309739521': {
+      [NAME]: 'ChainLink Token',
+      [SYMBOL]: 'LINK',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xE310CC75E3722B4359AC10F29C9A18b82fce6032'
+    },
+
+    '0xbF5d8683b9BE6C43fcA607eb2a6f2626A18837a6': {
+      [NAME]: 'Status Network Token',
+      [SYMBOL]: 'SNT',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xE6613aB2960e83c2a02Ee37d56E05D3Cfd13f5Ff'
+    }
+
+  }
+}
+
+
+    /*
     '0x960b236A07cf122663c4303350609A66A7B288C0': {
       [NAME]: 'Aragon Network Token',
       [SYMBOL]: 'ANT',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0x077d52B047735976dfdA76feF74d4d988AC25196'
     },
-    '0x0D8775F648430679A709E98d2b0Cb6250d2887EF': {
-      [NAME]: 'Basic Attention Token',
-      [SYMBOL]: 'BAT',
-      [DECIMALS]: 18,
-      [EXCHANGE_ADDRESS]: '0x2E642b8D59B45a1D8c5aEf716A84FF44ea665914'
-    },
+
     '0x107c4504cd79C5d2696Ea0030a8dD4e92601B82e': {
       [NAME]: 'Bloom Token',
       [SYMBOL]: 'BLT',
@@ -110,18 +156,7 @@ const INITIAL_TOKENS_CONTEXT = {
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0xb7520a5F8c832c573d6BD0Df955fC5c9b72400F7'
     },
-    '0xdd974D5C2e2928deA5F71b9825b8b646686BD200': {
-      [NAME]: 'Kyber Network Crystal',
-      [SYMBOL]: 'KNC',
-      [DECIMALS]: 18,
-      [EXCHANGE_ADDRESS]: '0x49c4f9bc14884f6210F28342ceD592A633801a8b'
-    },
-    '0x514910771AF9Ca656af840dff83E8264EcF986CA': {
-      [NAME]: 'ChainLink Token',
-      [SYMBOL]: 'LINK',
-      [DECIMALS]: 18,
-      [EXCHANGE_ADDRESS]: '0xF173214C720f58E03e194085B1DB28B50aCDeeaD'
-    },
+
     '0x6c6EE5e31d828De241282B9606C8e98Ea48526E2': {
       [NAME]: 'HoloToken',
       [SYMBOL]: 'HOT',
@@ -218,18 +253,8 @@ const INITIAL_TOKENS_CONTEXT = {
       [DECIMALS]: 9,
       [EXCHANGE_ADDRESS]: '0xA825CAE02B310E9901b4776806CE25db520c8642'
     },
-    '0x4156D3342D5c385a87D264F90653733592000581': {
-      [NAME]: 'Salt',
-      [SYMBOL]: 'SALT',
-      [DECIMALS]: 8,
-      [EXCHANGE_ADDRESS]: '0xC0C59cDe851bfcbdddD3377EC10ea54A18Efb937'
-    },
-    '0x744d70FDBE2Ba4CF95131626614a1763DF805B9E': {
-      [NAME]: 'Status Network Token',
-      [SYMBOL]: 'SNT',
-      [DECIMALS]: 18,
-      [EXCHANGE_ADDRESS]: '0x1aEC8F11A7E78dC22477e91Ed924Fab46e3A88Fd'
-    },
+
+
     '0xEf8a2c1BC94e630463293F71bF5414d13e80F62D': {
       [NAME]: 'Synthetix Network Token',
       [SYMBOL]: 'SNX',
@@ -290,20 +315,14 @@ const INITIAL_TOKENS_CONTEXT = {
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0x8dE0d002DC83478f479dC31F76cB0a8aa7CcEa17'
     },
-    '0x05f4a42e251f2d52b8ed15E9FEdAacFcEF1FAD27': {
-      [NAME]: 'Zilliqa',
-      [SYMBOL]: 'ZIL',
-      [DECIMALS]: 12,
-      [EXCHANGE_ADDRESS]: '0x7dc095A5CF7D6208CC680fA9866F80a53911041a'
-    },
+
     '0xE41d2489571d322189246DaFA5ebDe1F4699F498': {
       [NAME]: '0x Protocol Token',
       [SYMBOL]: 'ZRX',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0xaE76c84C9262Cdb9abc0C2c8888e62Db8E22A0bF'
-    }
-  }
-}
+    }*/
+
 
 const TokensContext = createContext()
 

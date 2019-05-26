@@ -12,7 +12,7 @@ import { useAllTransactions } from '../../contexts/Transactions'
 import './web3-status.scss'
 
 function getEtherscanLink(tx) {
-  return `https://etherscan.io/tx/${tx}`
+  return `https://ropsten.etherscan.io/tx/${tx}`
 }
 
 function getPendingText(pendingTransactions, pendingLabel) {
