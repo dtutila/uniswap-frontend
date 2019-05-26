@@ -157,13 +157,13 @@ export default function Header() {
     <div className="header">
       <BlockingWarning />
       <div className={classnames('header__top')}>
-        <a className="header__no-decoration" href="https://uniswap.io" target="_blank" rel="noopener noreferrer">
+        <a className="header__no-decoration" href="https://ropsten-uniswap.herokuapp.com" target="_blank" rel="noopener noreferrer">
           <Logo />
         </a>
 
         <div className="header__center-group">
-          <a className="header__no-decoration" href="https://uniswap.io" target="_blank" rel="noopener noreferrer">
-            <span className="header__title">Uniswap</span>
+          <a className="header__no-decoration" href="https://ropsten-uniswap.herokuapp.com" target="_blank" rel="noopener noreferrer">
+            <span className="header__title">ropsten.Uniswap </span>
           </a>
         </div>
 

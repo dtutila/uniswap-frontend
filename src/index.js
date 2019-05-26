@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
 ReactGA.pageview(window.location.pathname + window.location.search)
 
 const { InjectedConnector, NetworkOnlyConnector } = Connectors
-const Injected = new InjectedConnector({ supportedNetworks: [Number(process.env.REACT_APP_NETWORK_ID) || 1] })
+const Injected = new InjectedConnector({ supportedNetworks: [Number(process.env.REACT_APP_NETWORK_ID) || 3] })
 const Infura = new NetworkOnlyConnector({
   providerURL: process.env.REACT_APP_NETWORK_URL || ''
 })
